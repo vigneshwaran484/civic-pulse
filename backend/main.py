@@ -1,7 +1,7 @@
 from fastapi import FastAPI, Depends, HTTPException, UploadFile, File, Query
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
-from sqlalchemy import text, func, and_
+from sqlalchemy import text, func, and_, select
 from datetime import datetime, timedelta, date
 from typing import Optional
 import csv
