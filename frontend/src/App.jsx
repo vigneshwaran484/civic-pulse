@@ -4,7 +4,7 @@ import Anomalies from "./pages/Anomalies";
 import FeedbackExplorer from "./pages/FeedbackExplorer";
 import AskCivicPulse from "./pages/AskCivicPulse";
 import Setup from "./pages/Setup";
-import { Activity, AlertTriangle, List, MessageSquare, Settings } from "lucide-react";
+import { AlertTriangle, List, MessageSquare, Settings, Activity } from "lucide-react";
 
 const NAV = [
   { to: "/", icon: Activity, label: "Dashboard" },
@@ -21,9 +21,11 @@ export default function App() {
         <header className="glass-panel border-t-0 border-x-0 sticky top-0 z-50">
           <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
             <div className="flex items-center gap-4">
-              <div className="p-2 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl shadow-[0_0_15px_rgba(139,92,246,0.5)]">
-                <Activity className="text-white" size={24} />
-              </div>
+              <img
+                src="/logo.png"
+                alt="Civic Pulse Logo"
+                className="h-12 w-auto object-contain drop-shadow-[0_0_8px_rgba(59,130,246,0.4)]"
+              />
               <div>
                 <div className="text-2xl font-bold tracking-tight text-white">Civic Pulse</div>
                 <div className="text-blue-300/80 text-xs tracking-wider uppercase font-semibold">AI Decision Platform</div>
