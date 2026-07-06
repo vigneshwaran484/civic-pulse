@@ -1,0 +1,151 @@
+id,text,category,zone,date,status
+1,Auto-rickshaw drivers overcharging near railway station.,Transport,Zone 1,2026-06-28,Open
+2,No water supply in our area for the past 2 days. Families are struggling.,Water,Zone 5,2026-06-23,Open
+3,Speed breaker near school is broken and dangerous.,Roads,Zone 5,2026-06-19,Open
+4,Streetlight pole tilting dangerously after vehicle collision.,Electricity,Zone 4,2026-06-18,Open
+5,Speed breaker near school is broken and dangerous.,Roads,Zone 4,2026-07-02,Open
+6,Fire hydrant leaking continuously on Market Street. Huge water wastage.,Water,Zone 4,2026-06-09,Open
+7,Cycle lane blocked by parked cars on Temple Street.,Transport,Zone 4,2026-06-07,Open
+8,Metro construction blocking main road. No alternate route signage.,Transport,Zone 5,2026-06-25,Resolved
+9,Underground water pipe leaking near school. Road is waterlogged.,Water,Zone 2,2026-07-04,Resolved
+10,Wall of the community center is cracking. Risk of collapse.,Safety,Zone 3,2026-06-10,Open
+11,Stormwater drain cover missing on College Road. Very dangerous at night.,Roads,Zone 3,2026-06-15,Resolved
+12,No road markings or lane dividers on the highway stretch near our zone.,Roads,Zone 5,2026-07-01,Resolved
+13,Train crossing gate stuck for 30+ minutes regularly.,Transport,Zone 5,2026-06-26,Open
+14,Unauthorized speed bumps installed by residents blocking ambulance access.,Roads,Zone 1,2026-06-24,Resolved
+15,Cycle lane blocked by parked cars on Industrial Area Road.,Transport,Zone 3,2026-06-21,Open
+16,No dustbins installed in the new commercial area.,Sanitation,Zone 2,2026-06-19,Open
+17,Abandoned building being used for illegal activities. Residents scared.,Safety,Zone 5,2026-06-29,Open
+18,"Water meter is faulty, showing double the actual consumption.",Water,Zone 1,2026-07-01,Open
+19,Rusty brown water from taps after pipeline maintenance.,Water,Zone 4,2026-06-22,Open
+20,Shared auto service not following designated routes.,Transport,Zone 1,2026-06-19,Resolved
+21,Overflowing sewer manhole on Bus Stand Road. Terrible smell in entire area.,Sanitation,Zone 1,2026-07-01,Open
+22,Plastic waste burning in the empty ground every evening. Air quality terrible.,Sanitation,Zone 5,2026-06-20,Resolved
+23,Dead animal carcass on the roadside near market. Not removed for days.,Sanitation,Zone 5,2026-07-02,Open
+24,Power outage lasting 3 hours daily. No prior notice given.,Electricity,Zone 1,2026-06-21,Open
+25,Fogging for mosquitoes not done this season. Dengue cases rising.,Sanitation,Zone 2,2026-06-08,Open
+26,Frequent chain snatching incidents in the evening. Need more patrols.,Safety,Zone 1,2026-06-19,Resolved
+27,Construction site with no safety barriers. Workers and public at risk.,Safety,Zone 5,2026-06-20,Open
+28,Frequent tripping of area transformer. Power goes off 5-6 times daily.,Electricity,Zone 2,2026-06-24,Resolved
+29,Transformer blown in our area. No replacement for 7 days.,Electricity,Zone 4,2026-06-29,Open
+30,Transformer blown in our area. No replacement for 13 days.,Electricity,Zone 2,2026-07-06,Open
+31,Road resurfacing done poorly — already cracking after 2 weeks.,Roads,Zone 1,2026-06-09,Resolved
+32,Biomedical waste from clinic dumped in regular garbage.,Sanitation,Zone 4,2026-07-02,Open
+33,Road completely washed out after last week's rain. No repairs started.,Roads,Zone 4,2026-06-30,Resolved
+34,Biomedical waste from clinic dumped in regular garbage.,Sanitation,Zone 4,2026-06-09,Open
+35,Pedestrian crossing signal too short. Elderly cannot cross in time.,Transport,Zone 1,2026-06-13,Open
+36,Street lights not working on the main road for 8 days.,Roads,Zone 2,2026-06-22,Open
+37,Fire safety equipment in community hall expired. No replacements.,Safety,Zone 2,2026-07-04,Resolved
+38,Underground water pipe leaking near school. Road is waterlogged.,Water,Zone 1,2026-06-19,Resolved
+39,Speed breaker near school is broken and dangerous.,Roads,Zone 2,2026-06-21,Open
+40,Unauthorized speed bumps installed by residents blocking ambulance access.,Roads,Zone 4,2026-06-24,Open
+41,Community compost pit abandoned and turning into a dump.,Sanitation,Zone 4,2026-06-13,Resolved
+42,Streetlights broken in the entire residential block. Unsafe at night.,Safety,Zone 2,2026-06-30,Open
+43,Water tanker not arriving on scheduled days. Last delivery was 10 days ago.,Water,Zone 3,2026-06-18,Open
+44,Muddy unpaved road in the new residential area. Dust everywhere.,Roads,Zone 1,2026-07-04,Resolved
+45,Overhead tank in our apartment block is cracked. Needs urgent repair.,Water,Zone 2,2026-06-08,Open
+46,Overhead tank in our apartment block is cracked. Needs urgent repair.,Water,Zone 5,2026-06-15,Open
+47,Stray dogs and rats around overflowing dumpster on Lake View Road.,Sanitation,Zone 2,2026-06-26,Resolved
+48,Shared auto service not following designated routes.,Transport,Zone 3,2026-06-07,Open
+49,Exposed live wires near the children's playground. Immediate danger.,Electricity,Zone 5,2026-07-04,Resolved
+50,Speed breaker near school is broken and dangerous.,Roads,Zone 3,2026-06-08,Resolved
+51,Frequent chain snatching incidents in the evening. Need more patrols.,Safety,Zone 5,2026-06-17,Resolved
+52,Bus stop shelter collapsed. No repair for 4 days.,Transport,Zone 5,2026-06-15,Open
+53,Overhead tank in our apartment block is cracked. Needs urgent repair.,Water,Zone 5,2026-06-27,Open
+54,Bridge railing broken. No safety barrier for pedestrians.,Roads,Zone 3,2026-06-28,Open
+55,Bus route #166 cancelled without notice. Thousands stranded.,Transport,Zone 4,2026-07-05,Resolved
+56,School bus violations — overloading and reckless driving observed.,Transport,Zone 3,2026-06-22,Open
+57,Recurring water outage every evening between 5-9 PM.,Water,Zone 1,2026-06-08,Open
+58,Public toilet in the park is in terrible condition. No cleaning in weeks.,Sanitation,Zone 5,2026-06-23,Open
+59,Open drainage near the water treatment plant causing contamination risk.,Water,Zone 3,2026-06-29,Open
+60,Electrical wires hanging low after storm. Extremely dangerous.,Electricity,Zone 4,2026-06-13,Resolved
+61,Bridge railing broken. No safety barrier for pedestrians.,Roads,Zone 4,2026-06-13,Open
+62,Accessible ramps missing at the main bus terminal.,Transport,Zone 2,2026-06-11,Open
+63,Fire safety equipment in community hall expired. No replacements.,Safety,Zone 2,2026-06-07,Open
+64,Road resurfacing done poorly — already cracking after 2 weeks.,Roads,Zone 1,2026-06-24,Resolved
+65,Garbage segregation not being followed by collection trucks.,Sanitation,Zone 3,2026-06-24,Open
+66,Contaminated water coming from taps. Children have fallen sick.,Water,Zone 1,2026-06-28,Resolved
+67,"Water meter is faulty, showing double the actual consumption.",Water,Zone 5,2026-06-13,Open
+68,Voltage fluctuations damaging appliances. Multiple complaints ignored.,Electricity,Zone 1,2026-06-18,Open
+69,Illegal liquor shop opened near residential area. Causing disturbance.,Safety,Zone 1,2026-06-11,Open
+70,Public bus drivers skipping stops during off-peak hours.,Transport,Zone 2,2026-07-04,Open
+71,School bus violations — overloading and reckless driving observed.,Transport,Zone 1,2026-06-27,Resolved
+72,Public toilet in the park is in terrible condition. No cleaning in weeks.,Sanitation,Zone 4,2026-06-19,Resolved
+73,Drug dealing reported near the school compound after hours.,Safety,Zone 2,2026-06-27,Open
+74,Fogging for mosquitoes not done this season. Dengue cases rising.,Sanitation,Zone 3,2026-06-11,Open
+75,Illegal liquor shop opened near residential area. Causing disturbance.,Safety,Zone 4,2026-06-30,Open
+76,Stormwater drain cover missing on Gandhi Nagar. Very dangerous at night.,Roads,Zone 1,2026-06-15,Open
+77,Street lights not working on the main road for 2 days.,Roads,Zone 3,2026-06-30,Open
+78,Fire safety equipment in community hall expired. No replacements.,Safety,Zone 5,2026-07-04,Resolved
+79,Power cuts during peak hours affecting work-from-home residents.,Electricity,Zone 2,2026-06-24,Resolved
+80,Shared auto service not following designated routes.,Transport,Zone 1,2026-06-09,Resolved
+81,Construction debris dumped on the roadside for 9 days. Not cleared.,Roads,Zone 2,2026-06-14,Resolved
+82,No road markings or lane dividers on the highway stretch near our zone.,Roads,Zone 1,2026-06-11,Open
+83,Power cuts during peak hours affecting work-from-home residents.,Electricity,Zone 3,2026-06-08,Resolved
+84,Power cuts during peak hours affecting work-from-home residents.,Electricity,Zone 4,2026-06-19,Resolved
+85,Large tree about to fall on power lines. Danger to nearby houses.,Safety,Zone 3,2026-06-10,Resolved
+86,Power cuts during peak hours affecting work-from-home residents.,Electricity,Zone 4,2026-06-28,Open
+87,Construction debris dumped on the roadside for 3 days. Not cleared.,Roads,Zone 3,2026-06-08,Open
+88,Speed breaker near school is broken and dangerous.,Roads,Zone 4,2026-06-14,Resolved
+89,Stray dogs and rats around overflowing dumpster on Lake View Road.,Sanitation,Zone 5,2026-07-05,Open
+90,Solar panel installation subsidy application stuck for months.,Electricity,Zone 1,2026-06-12,Resolved
+91,Plastic waste burning in the empty ground every evening. Air quality terrible.,Sanitation,Zone 3,2026-06-09,Resolved
+92,Auto-rickshaw drivers overcharging near railway station.,Transport,Zone 5,2026-06-08,Resolved
+93,Large tree about to fall on power lines. Danger to nearby houses.,Safety,Zone 4,2026-06-26,Open
+94,Public bus running 11 minutes late consistently.,Transport,Zone 2,2026-06-07,Resolved
+95,Stray dog menace in the park area. Multiple bite incidents reported.,Safety,Zone 5,2026-07-06,Open
+96,Wall of the community center is cracking. Risk of collapse.,Safety,Zone 2,2026-06-24,Open
+97,Illegal dumping of construction waste in the empty plot.,Sanitation,Zone 4,2026-06-10,Open
+98,Wall of the community center is cracking. Risk of collapse.,Safety,Zone 1,2026-07-05,Resolved
+99,Auto-rickshaw drivers overcharging near railway station.,Transport,Zone 1,2026-06-29,Resolved
+100,Road completely washed out after last week's rain. No repairs started.,Roads,Zone 2,2026-06-15,Open
+101,Metro construction blocking main road. No alternate route signage.,Transport,Zone 3,2026-07-01,Resolved
+102,Overhead tank in our apartment block is cracked. Needs urgent repair.,Water,Zone 2,2026-07-03,Resolved
+103,Voltage fluctuations damaging appliances. Multiple complaints ignored.,Electricity,Zone 4,2026-06-14,Open
+104,No bus service to the new residential area. Residents rely on private vehicles.,Transport,Zone 2,2026-06-12,Open
+105,Rusty brown water from taps after pipeline maintenance.,Water,Zone 5,2026-06-25,Resolved
+106,Underground water pipe leaking near school. Road is waterlogged.,Water,Zone 5,2026-07-06,Open
+107,Request for new water connection pending for 15 days with no response.,Water,Zone 4,2026-06-16,Resolved
+108,Stormwater drain cover missing on College Road. Very dangerous at night.,Roads,Zone 4,2026-06-20,Open
+109,CCTVs installed last year are not functional. No monitoring.,Safety,Zone 4,2026-06-13,Open
+110,"Water meter is faulty, showing double the actual consumption.",Water,Zone 3,2026-06-29,Resolved
+111,Train crossing gate stuck for 30+ minutes regularly.,Transport,Zone 4,2026-06-21,Open
+112,Unauthorized speed bumps installed by residents blocking ambulance access.,Roads,Zone 3,2026-06-26,Resolved
+113,Transformer blown in our area. No replacement for 5 days.,Electricity,Zone 1,2026-06-30,Open
+114,Fire safety equipment in community hall expired. No replacements.,Safety,Zone 5,2026-06-14,Resolved
+115,Drug dealing reported near the school compound after hours.,Safety,Zone 1,2026-06-29,Open
+116,School bus violations — overloading and reckless driving observed.,Transport,Zone 5,2026-06-19,Open
+117,Streetlight pole tilting dangerously after vehicle collision.,Electricity,Zone 3,2026-06-22,Open
+118,Rusty brown water from taps after pipeline maintenance.,Water,Zone 2,2026-06-13,Open
+119,Illegal encroachment narrowing the road. Vehicles can barely pass.,Roads,Zone 2,2026-06-28,Resolved
+120,Voltage fluctuations damaging appliances. Multiple complaints ignored.,Electricity,Zone 3,2026-06-10,Resolved
+121,Street lights not working on the main road for 6 days.,Roads,Zone 3,2026-06-19,Open
+122,Frequent tripping of area transformer. Power goes off 5-6 times daily.,Electricity,Zone 3,2026-07-02,Resolved
+123,Water tanker not arriving on scheduled days. Last delivery was 9 days ago.,Water,Zone 1,2026-06-21,Open
+124,Water pipeline burst on MG Road. Flooding in basement parking.,Water,Zone 3,2026-06-21,Resolved
+125,Streetlights broken in the entire residential block. Unsafe at night.,Safety,Zone 1,2026-06-15,Open
+126,No dustbins installed in the new commercial area.,Sanitation,Zone 1,2026-07-03,Resolved
+127,Electricity bill showing impossible readings. Suspected meter tampering.,Electricity,Zone 5,2026-06-20,Open
+128,Fogging for mosquitoes not done this season. Dengue cases rising.,Sanitation,Zone 5,2026-06-27,Resolved
+129,Public bus drivers skipping stops during off-peak hours.,Transport,Zone 1,2026-06-30,Resolved
+130,Water pipeline burst on Main Road. Flooding in basement parking.,Water,Zone 2,2026-06-19,Open
+131,No police patrol in our area despite repeated requests.,Safety,Zone 5,2026-07-05,Open
+132,Parking lot full of abandoned vehicles. No enforcement.,Transport,Zone 4,2026-06-29,Open
+133,Voltage fluctuations damaging appliances. Multiple complaints ignored.,Electricity,Zone 2,2026-06-19,Open
+134,Unauthorized speed bumps installed by residents blocking ambulance access.,Roads,Zone 1,2026-06-11,Open
+135,Drainage blocked in our lane causing stagnant water and mosquitoes.,Sanitation,Zone 4,2026-06-14,Open
+136,Solar panel installation subsidy application stuck for months.,Electricity,Zone 5,2026-07-04,Open
+137,Bus stop shelter collapsed. No repair for 5 days.,Transport,Zone 3,2026-07-06,Open
+138,Unauthorized power tapping from street lights by vendors.,Electricity,Zone 1,2026-06-15,Resolved
+139,Bridge railing broken. No safety barrier for pedestrians.,Roads,Zone 4,2026-06-22,Open
+140,Wall of the community center is cracking. Risk of collapse.,Safety,Zone 4,2026-06-21,Resolved
+141,Cycle lane blocked by parked cars on Industrial Area Road.,Transport,Zone 1,2026-06-26,Resolved
+142,Bus route #261 cancelled without notice. Thousands stranded.,Transport,Zone 4,2026-06-19,Resolved
+143,Illegal dumping of construction waste in the empty plot.,Sanitation,Zone 3,2026-06-12,Open
+144,Auto-rickshaw drivers overcharging near railway station.,Transport,Zone 5,2026-07-05,Open
+145,Open electrical panel on the street. Children playing nearby.,Safety,Zone 4,2026-06-30,Resolved
+146,CCTVs installed last year are not functional. No monitoring.,Safety,Zone 4,2026-06-16,Open
+147,Footpath tiles broken and uneven. Elderly residents tripping.,Roads,Zone 3,2026-06-19,Open
+148,Fire safety equipment in community hall expired. No replacements.,Safety,Zone 1,2026-07-02,Open
+149,Taxi stand encroaching on footpath. Pedestrians forced onto road.,Transport,Zone 3,2026-06-21,Open
+150,Construction debris dumped on the roadside for 13 days. Not cleared.,Roads,Zone 4,2026-06-17,Open
