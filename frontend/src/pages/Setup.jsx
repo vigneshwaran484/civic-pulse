@@ -148,14 +148,32 @@ export default function Setup() {
         )}
       </div>
 
-      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5">
-        <h3 className="font-bold text-gray-800 mb-2 flex items-center gap-2">
-          <RefreshCw size={16} />
-          Reset
-        </h3>
-        <p className="text-sm text-gray-600 mb-3">
-          To reload fresh data, re-run steps 2 and 3. The database will accumulate new records.
-        </p>
+      <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 flex items-center justify-between">
+        <div>
+          <h3 className="font-bold text-gray-800 mb-1 flex items-center gap-2">
+            <RefreshCw size={16} />
+            Reset Database
+          </h3>
+          <p className="text-sm text-gray-600">
+            Wipe all raw and processed records from the database to start fresh.
+          </p>
+        </div>
+        <button
+          onClick={async () => {
+            if (window.confirm("Are you sure you want to clear the entire database?")) {
+              try {
+                await api.reset();
+                alert("Database reset successfully!");
+                window.location.reload();
+              } catch (e) {
+                alert(`Reset failed: ${e.message}`);
+              }
+            }
+          }}
+          className="bg-red-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-red-700 transition-colors"
+        >
+          Reset Database
+        </button>
       </div>
     </div>
   );

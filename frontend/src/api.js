@@ -29,4 +29,5 @@ export const api = {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ question }),
     }),
+  reset: () => req("/reset", { method: "POST" }),
 };

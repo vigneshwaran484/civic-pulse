@@ -425,3 +425,13 @@ async def ask(payload: dict, db: Session = Depends(get_db)):
     answer = await generate_nl_answer(question, intent_data.get("intent", ""), data)
 
     return {"answer": answer, "data": data, "intent": intent_data}
+
+
+@app.post("/reset")
+def reset_database(db: Session = Depends(get_db)):
+    """Clear all records from feedback and aggregate tables."""
+    db.query(FeedbackProcessed).delete()
+    db.query(ZoneDailyAggregate).delete()
+    db.query(FeedbackRaw).delete()
+    db.commit()
+    return {"status": "ok", "message": "Database wiped successfully"}
