@@ -97,7 +97,7 @@ async def process_feedback(
     db: Session = Depends(get_db),
 ):
     """AI-classify unprocessed feedback rows using Gemini."""
-    processed_ids = db.query(FeedbackProcessed.feedback_id).subquery()
+    processed_ids = select(FeedbackProcessed.feedback_id)
     unprocessed = (
         db.query(FeedbackRaw)
         .filter(FeedbackRaw.id.notin_(processed_ids))
