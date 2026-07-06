@@ -67,23 +67,50 @@ Return this exact JSON structure:
 
 async def classify_feedback(description: str) -> dict:
     prompt = CLASSIFICATION_PROMPT.format(description=description)
+    
+    # Determine fallback values locally in case API fails or is not configured
+    desc_lower = description.lower()
+    fallback_cat = "road"
+    if any(k in desc_lower for k in ["water", "leak", "sewage", "tap", "tanker", "pipe"]):
+        fallback_cat = "water"
+    elif any(k in desc_lower for k in ["garbage", "dump", "waste", "bin", "compost", "filth", "debris", "trash"]):
+        fallback_cat = "sanitation"
+    elif any(k in desc_lower for k in ["light", "lamp", "power", "voltage", "electricity", "transformer", "blackout"]):
+        fallback_cat = "electricity"
+    elif any(k in desc_lower for k in ["harassment", "patrol", "cctv", "manhole", "robbery", "safety", "snatching", "crime", "police"]):
+        fallback_cat = "safety"
+    elif any(k in desc_lower for k in ["bus", "auto", "traffic", "metro", "train", "parking", "transport", "route", "road markings"]):
+        fallback_cat = "transports"
+
+    # Default realistic urgency score based on keywords
+    fallback_urgency = 5
+    if any(k in desc_lower for k in ["critical", "danger", "hazard", "harassment", "snatching", "accident", "injury", "flood"]):
+        fallback_urgency = 9
+    elif any(k in desc_lower for k in ["broken", "leak", "power cut", "overflow", "stray"]):
+        fallback_urgency = 6
+
     for attempt in range(2):
         try:
             raw = await call_gemini(prompt)
-            return extract_json(raw)
+            result = extract_json(raw)
+            # Ensure the API returned a valid category
+            if result.get("category_ai") in ["road", "water", "sanitation", "electricity", "safety", "transports"]:
+                return result
+            result["category_ai"] = fallback_cat
+            return result
         except Exception as e:
             if attempt == 1:
                 return {
-                    "category_ai": "road",
+                    "category_ai": fallback_cat,
                     "sentiment": "negative",
-                    "urgency_score": 5,
-                    "reasoning": f"Fallback classification due to error: {str(e)[:50]}",
+                    "urgency_score": fallback_urgency,
+                    "reasoning": f"Local fallback due to error: {str(e)[:50]}",
                 }
     return {
-        "category_ai": "road",
+        "category_ai": fallback_cat,
         "sentiment": "negative",
-        "urgency_score": 5,
-        "reasoning": "Fallback classification",
+        "urgency_score": fallback_urgency,
+        "reasoning": "Local fallback classification",
     }
 
 

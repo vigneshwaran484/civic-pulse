@@ -108,8 +108,13 @@ async def process_feedback(
     if not unprocessed:
         return {"processed": 0, "message": "No unprocessed feedback found"}
 
-    # Classify all records in parallel using asyncio.gather to avoid timeouts
-    tasks = [classify_feedback(fb.description) for fb in unprocessed]
+    # Classify records in parallel but limit concurrency to 5 at a time to avoid Gemini rate limits (429)
+    sem = asyncio.Semaphore(5)
+    async def sem_classify(desc):
+        async with sem:
+            return await classify_feedback(desc)
+
+    tasks = [sem_classify(fb.description) for fb in unprocessed]
     classifications = await asyncio.gather(*tasks)
 
     results = []

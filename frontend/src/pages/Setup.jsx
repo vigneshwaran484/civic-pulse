@@ -76,9 +76,9 @@ export default function Setup() {
     setStep("process", "loading");
     try {
       let total = 0;
-      // Process in batches of 50
-      for (let i = 0; i < 10; i++) {
-        const r = await api.process(50);
+      // Process in smaller batches of 15 to stay safe from rate limits and timeouts
+      for (let i = 0; i < 35; i++) {
+        const r = await api.process(15);
         total += r.processed || 0;
         if ((r.processed || 0) === 0) break;
       }
