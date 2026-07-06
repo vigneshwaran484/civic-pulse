@@ -108,15 +108,18 @@ async def process_feedback(
     if not unprocessed:
         return {"processed": 0, "message": "No unprocessed feedback found"}
 
+    # Classify all records in parallel using asyncio.gather to avoid timeouts
+    tasks = [classify_feedback(fb.description) for fb in unprocessed]
+    classifications = await asyncio.gather(*tasks)
+
     results = []
-    for fb in unprocessed:
-        classification = await classify_feedback(fb.description)
+    for fb, classification in zip(unprocessed, classifications):
         priority = compute_priority_score(
             classification.get("urgency_score", 5), fb.submitted_at, fb.zone, db
         )
         fp = FeedbackProcessed(
             feedback_id=fb.id,
-            category_ai=classification.get("category_ai", "other"),
+            category_ai=classification.get("category_ai", "road"),
             sentiment=classification.get("sentiment", "negative"),
             urgency_score=classification.get("urgency_score", 5),
             priority_score=priority,
